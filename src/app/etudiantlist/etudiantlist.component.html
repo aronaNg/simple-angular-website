@@ -1,0 +1,5 @@
+<div class="container">
+    <div class="row row-cols-2">
+        <app-etudiant *ngFor="let etudiantVar of EtudiantArray; let i =index" [etudiant]="etudiantVar" [etd_index]="i+1"></app-etudiant>
+    </div>
+</div>

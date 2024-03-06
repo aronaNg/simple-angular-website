@@ -1,0 +1,22 @@
+<div class="card" style="width: 18rem; margin: 10px;">
+  <div class="card-header">
+    Enseignant : {{ens_index}}
+  </div>
+    <!-- <img src="{{etudiant.image}}" class="card-img-top" alt="..."> -->
+    <img src={{enseignant.id|mypipe}} class="card-img-top" alt="Photo de l enseignant">
+    <div class="card-body">
+      <h5 class="card-title">Nom : {{enseignant.nom}}</h5>
+      <p class="card-text">Prénom : {{enseignant.prenom}}</p>
+    </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Email : {{enseignant.email}}</li>
+          <li class="list-group-item">Téléphone : {{enseignant.telephone}}</li>
+          <li class="list-group-item">
+            LinkedIn :
+            <a href="#" class="card-link">
+             {{enseignant.linkSearch}}</a></li>
+             <li class="list-group-item">Bureau : {{enseignant.bureau}}</li>
+        </ul>
+  </div>
+
+

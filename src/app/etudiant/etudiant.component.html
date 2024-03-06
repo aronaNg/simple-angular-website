@@ -1,0 +1,22 @@
+<div class="card" style="width: 18rem; margin: 10px;">
+  <div class="card-header">
+    Etudiant : {{etd_index}}
+  </div>
+    <!-- <img src="{{etudiant.image}}" class="card-img-top" alt="..."> -->
+    <img src={{etudiant.id|mypipe}} class="card-img-top" alt="Photo de l etudiant">
+    <div class="card-body">
+      <h5 class="card-title">Nom : {{etudiant.nom}}</h5>
+      <p class="card-text">Prénom : {{etudiant.prenom}}</p>
+    </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Email : {{etudiant.email}}</li>
+          <li class="list-group-item">Téléphone : {{etudiant.telephone}}</li>
+          <li class="list-group-item">
+            LinkedIn :
+            <a href="#" class="card-link">
+             {{etudiant.link}}</a></li>
+          <li class="list-group-item" [ngStyle]="{'backgroundColor': etudiant.compteAlumini > 0 ? 'green' : 'red ', 'color': etudiant.compteAlumini>0 ? 'white': 'black'}">Alumni : {{etudiant.compteAlumini}} </li>
+        </ul>
+  </div>
+
+
