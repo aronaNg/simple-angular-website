@@ -1,1 +1,5 @@
-<p>personnellist works!</p>
+<div class="container">
+  <div class="row row-cols-2">
+      <app-personnel *ngFor="let personnelVar of PersonnelArray; let i =index" [personnel]="personnelVar" [pers_index]="i+1"></app-personnel>
+  </div>
+</div>

@@ -1,1 +1,22 @@
-<p>personnel works!</p>
+<div class="card" style="width: 18rem; margin: 10px;">
+  <div class="card-header">
+    Personnel : {{pers_index}}
+  </div>
+    <!-- <img src="{{etudiant.image}}" class="card-img-top" alt="..."> -->
+    <img src={{personnel.id|mypipe}} class="card-img-top" alt="Photo du personnel">
+    <div class="card-body">
+      <h5 class="card-title">Nom : {{personnel.nom}}</h5>
+      <p class="card-text">Prénom : {{personnel.prenom}}</p>
+    </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Email : {{personnel.email}}</li>
+          <li class="list-group-item">Téléphone : {{personnel.telephone}}</li>
+          <li class="list-group-item">
+            LinkedIn :
+            <a href="#" class="card-link">
+             {{personnel.compteTwitter}}</a></li>
+             <li class="list-group-item">Bureau : {{personnel.bureau}}</li>
+        </ul>
+  </div>
+
+

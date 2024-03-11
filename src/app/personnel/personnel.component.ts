@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Personnel } from 'src/models/Personnel';
 
 @Component({
   selector: 'app-personnel',
@@ -7,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PersonnelComponent implements OnInit {
 
+  @Input() personnel !: Personnel
+  @Input() pers_index !: number
   constructor() { }
 
   ngOnInit(): void {
