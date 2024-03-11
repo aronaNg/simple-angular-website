@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Personnel } from 'src/models/Personnel';
+import { PersonnelService } from '../personnel.service';
 
 @Component({
   selector: 'app-personnellist',
@@ -6,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./personnellist.component.css']
 })
 export class PersonnellistComponent implements OnInit {
+  PersonnelArray : Personnel[] = []
 
-  constructor() { }
+  constructor(public service : PersonnelService) {
+    this.PersonnelArray = service.getPersonnels()
+  }
 
   ngOnInit(): void {
+
   }
 
 }
