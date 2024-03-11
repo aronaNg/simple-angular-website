@@ -9,6 +9,8 @@ import { MypipePipe } from './mypipe.pipe';
 import { NavbarComponent } from './navbar/navbar.component';
 import { EnseignantComponent } from './enseignant/enseignant.component';
 import { EnseignantlistComponent } from './enseignantlist/enseignantlist.component';
+import { PersonnelComponent } from './personnel/personnel.component';
+import { PersonnellistComponent } from './personnellist/personnellist.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { EnseignantlistComponent } from './enseignantlist/enseignantlist.compone
     MypipePipe,
     NavbarComponent,
     EnseignantComponent,
-    EnseignantlistComponent
+    EnseignantlistComponent,
+    PersonnelComponent,
+    PersonnellistComponent
   ],
   imports: [
     BrowserModule,
