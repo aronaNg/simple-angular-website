@@ -13,10 +13,10 @@ export class PersonnelService {
   getPersonnels() : Personnel[] {
     this.Array = []
 
-    this.Array.push(new Personnel(7,'NGOM','Pers', 'arona@gmail.com', './assets/img/6.png',"0709080706","bureau1","https://www.linkedin.com/in/aronangom/"))
-    this.Array.push(new Personnel(7,'HOFFMANN','Pers', 'stan@gmail.com', './assets/img/6.png',"070806050412","bureau2","https://www.linkedin.com/in/stan-hoffmann/"))
-    this.Array.push(new Personnel(7,'GUEYE','Pers', 'hamda@gmail.com','./assets/img/6.png',"0609080706","bureau3", "https://www.linkedin.com/in/gueye-moussa/"))
-    this.Array.push(new Personnel(7,'NGOM','Pers', 'ibou@gmail.com', './assets/img/6.png',"0609653432","bureau4","https://www.linkedin.com/in/ibrahima-ngom/"))
+    this.Array.push(new Personnel(7,'NGOM','Pers', 'arona@gmail.com', './assets/img/7.png',"0709080706","bureau1","service1","https://www.twitter.com/aronangom/"))
+    this.Array.push(new Personnel(7,'HOFFMANN','Pers', 'stan@gmail.com', './assets/img/7.png',"070806050412","bureau2","service2","https://www.twitter.com/stan-hoffmann/"))
+    this.Array.push(new Personnel(7,'GUEYE','Pers', 'moussa@gmail.com','./assets/img/7.png',"0609080706","bureau3","service3", "https://www.twitter.com/gueye-moussa/"))
+    this.Array.push(new Personnel(7,'NGOM','Pers', 'ibou@gmail.com', './assets/img/7.png',"0609653432","bureau4","service4","https://www.twitter.com/ibrahima-ngom/"))
     return this.Array
 
   }
