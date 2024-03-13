@@ -11,7 +11,11 @@ import { EnseignantComponent } from './enseignant/enseignant.component';
 import { EnseignantlistComponent } from './enseignantlist/enseignantlist.component';
 import { PersonnelComponent } from './personnel/personnel.component';
 import { PersonnellistComponent } from './personnellist/personnellist.component';
-
+import { FormsModule } from '@angular/forms';
+import { AjoutetudiantComponent } from './ajoutetudiant/ajoutetudiant.component';
+import { AjoutprofesseurComponent } from './ajoutprofesseur/ajoutprofesseur.component';
+import { AjoutpersonnelComponent } from './ajoutpersonnel/ajoutpersonnel.component';
+import { AccueilComponent } from './accueil/accueil.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,11 +26,16 @@ import { PersonnellistComponent } from './personnellist/personnellist.component'
     EnseignantComponent,
     EnseignantlistComponent,
     PersonnelComponent,
-    PersonnellistComponent
+    PersonnellistComponent,
+    AjoutetudiantComponent,
+    AjoutprofesseurComponent,
+    AjoutpersonnelComponent,
+    AccueilComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
