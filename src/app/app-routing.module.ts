@@ -7,6 +7,8 @@ import { AjoutpersonnelComponent } from './ajoutpersonnel/ajoutpersonnel.compone
 import { AccueilComponent } from './accueil/accueil.component';
 import { EnseignantlistComponent } from './enseignantlist/enseignantlist.component';
 import { EtudiantlistComponent } from './etudiantlist/etudiantlist.component';
+import { PersonnellistComponent } from './personnellist/personnellist.component';
+
 const routes: Routes = [
   {path:'', component: AccueilComponent},
   {path:'ajoutetudiant', component: AjoutetudiantComponent},
@@ -14,6 +16,7 @@ const routes: Routes = [
   {path:'ajoutpersonnel', component: AjoutpersonnelComponent},
   {path:'enseignants', component: EnseignantlistComponent},
   {path:'etudiants', component: EtudiantlistComponent},
+  {path:'staff', component: PersonnellistComponent},
 
 ];
 @NgModule({

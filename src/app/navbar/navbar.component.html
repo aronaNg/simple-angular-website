@@ -9,14 +9,25 @@
       <li class="nav-item">
         <a class="nav-link active" aria-current="page" routerLink="">Accueil</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link active" routerLink="/ajoutetudiant">Ajouter étudiant</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link active dropdown-toggle" routerLink="etudiants" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Etudiants
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" routerLink="/ajoutetudiant">Ajouter un Etudiant</a></li>
+        </ul>
       </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="/ajoutprofesseur">Ajouter enseignant</a>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link active dropdown-toggle" routerLink="enseignants" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Enseignants
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" routerLink="/ajoutprofesseur">Ajouter un enseignant</a></li>
+        </ul>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link active" routerLink="ajoutpersonnel" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <a class="nav-link active dropdown-toggle" routerLink="staff" role="button" data-bs-toggle="dropdown" aria-expanded="false">
            Staff
         </a>
         <ul class="dropdown-menu">
