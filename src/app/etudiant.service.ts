@@ -5,6 +5,7 @@ import { Etudiant } from 'src/models/Etudiant';
   providedIn: 'root'
 })
 export class EtudiantService {
+  etudiant!: Etudiant
 
   Array : Etudiant[] = []
 

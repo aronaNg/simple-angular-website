@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Personnel } from 'src/models/Personnel';
 
 @Component({
   selector: 'app-ajoutpersonnel',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ajoutpersonnel.component.css']
 })
 export class AjoutpersonnelComponent implements OnInit {
+  @Input() personnel !: Personnel
 
   constructor() { }
 

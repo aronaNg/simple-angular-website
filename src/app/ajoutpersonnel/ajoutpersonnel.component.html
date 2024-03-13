@@ -1,1 +1,43 @@
-<p>ajoutpersonnel works!</p>
+<div class="container-fluid col-lg-6">
+  <h2>Ajouter un personnel</h2>
+
+  <form>
+    <div class="form-group mt-3">
+      <label for="nom">Nom:</label>
+      <input [(ngModel)]="personnel.nom" class="form-control"  type="text" id="nom" name="nom" required>
+    </div>
+
+    <div class="form-group mt-3">
+      <label for="prenom">Prénom:</label>
+      <input [(ngModel)]="personnel.prenom" class="form-control" type="text" id="prenom" name="prenom" required>
+    </div>
+
+    <div class="form-group mt-3">
+      <label for="email">Email:</label>
+      <input [(ngModel)]="personnel.email" class="form-control" type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group mt-3">
+      <label for="telephone">Téléphone:</label>
+      <input [(ngModel)]="personnel.telephone" class="form-control" type="tel" id="telephone" name="telephone" required>
+    </div>
+
+    <div class="form-group mt-3">
+      <label for="image">Image:</label>
+      <input [(ngModel)]="personnel.image" class="form-control" type="file" id="image" name="image">
+    </div>
+
+
+    <div class="form-group mt-3">
+      <label for="link">Service:</label>
+      <input [(ngModel)]="personnel.service" class="form-control" type="url" id="link" name="link">
+    </div>
+
+    <div class="form-group mt-3">
+      <label for="link">Compte twitter:</label>
+      <input [(ngModel)]="personnel.compteTwitter" class="form-control" type="url" id="link" name="link">
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-3">Ajouter</button>
+  </form>
+</div>
